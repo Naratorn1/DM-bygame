@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="codepen">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bootstrap Validation with Parsley In A Multi-step Form</title>
+  <link rel='stylesheet' href='https://rawgit.com/guillaumepotier/Parsley.js/2.7.2/bower_components/bootstrap/dist/css/bootstrap.css'>
+<link rel='stylesheet' href='https://rawgit.com/guillaumepotier/Parsley.js/2.7.2/doc/assets/docs.css'>
+<link rel='stylesheet' href='https://rawgit.com/guillaumepotier/Parsley.js/2.7.2/src/parsley.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form class="demo-form" id="create-profile">
+  <div class="form-section">
+    <div class="form-group has-feedback">
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+        <input type="text" class="form-control has-feedback-right" placeholder="First Name" name="firstname" id="firstname" required="required">
+      </div>
+      <span aria-hidden="true" class="glyphicon form-control-feedback right"> </span>
+    </div>
+	
+    <div class="form-group has-feedback">
+      <div class="input-group">        
+        <span class="input-group-addon"></span>
+        <input type="text" class="form-control has-feedback-right" placeholder="Last Name" name="lastname" id="lastname" required="required">
+      </div>
+      <span aria-hidden="true" class="glyphicon form-control-feedback right"> </span>
+    </div>	
+  </div> 
+
+  
+  <div class="form-section">
+    <div class="form-group has-feedback">
+      <div class="input-group">        
+		<span class="input-group-addon">@</span>
+        <input type="email" class="form-control has-feedback-right" placeholder="Email" name="email" id="email" required="required">
+      </div>
+      <span aria-hidden="true" class="glyphicon form-control-feedback right"> </span>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-group has-feedback">
+      <div class="input-group">        
+		<span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i>
+</span>
+        <input type="tel" class="form-control has-feedback-right" placeholder="Phone Number" name="tel" id="tel" required="required">
+      </div>
+      <span aria-hidden="true" class="glyphicon form-control-feedback right"> </span>
+    </div>
+  </div>
+
+  <div class="form-navigation">
+    <button type="button" class="previous btn btn-info pull-left">&lt; Previous</button>
+    <button type="button" class="next btn btn-info pull-right">Next &gt;</button>
+    <input class="btn btn-default pull-right" type="submit">
+    <span class="clearfix"></span>
+  </div>
+
+</form>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.1.3.js'></script>
+<script src='https://rawgit.com/guillaumepotier/Parsley.js/2.7.2/dist/parsley.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+/*custom font*/
+@import url(import url here);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
+@import url('https://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+
+main {
+/*	margin-top: 4.5em; */
+}
+#section1 {
+	height: 30em;
+}
+
+
+/* Multi-Step Form */
+* {
+  box-sizing: border-box;
+}
+
+#regForm {
+  background-color: #fff;
+  margin: 50px auto;
+  font-family: 'Prompt', sans-serif;
+  padding: 40px;
+  width: 100%;
+  min-width: 600px;
+}
+
+
+input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Mark input boxes that get errors during validation: */
+
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+
+
+/* Step marker: Place in the form. */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: rgb(72, 165, 75);
+}
